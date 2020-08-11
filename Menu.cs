@@ -29,5 +29,11 @@ namespace WindowsForms2
             fOef02 oef02 = new fOef02();
             oef02.Show();
         }
+
+        private void btnOef03_Click(object sender, EventArgs e)
+        {
+            fOef03 oef03 = new fOef03();
+            oef03.Show();
+        }
     }
 }
