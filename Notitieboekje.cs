@@ -1,70 +1,76 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Oef01
 {
     class Notitieboekje
     {
-        bool bewerkbaar = true;
         public string eigenaar { get; set; }
         public string titel { get; set; }
         public string kleur { get; set; }
         public List<Notitie> notities { get; set; }
 
+        public Notitieboekje()
+        {
+            notities = new List<Notitie>();
+        }
         public Notitieboekje(string eigenaar, string titel, string kleur)
         {
-            this.eigenaar = eigenaar;
-            this.titel = titel;
-            this.kleur = kleur;
-            notities = new List<Notitie>();
+
         }
 
         public void Bijschrijven(string notitie)
         {
-            if (bewerkbaar)
-            {
-                Notitie newNotitie = new Notitie(notitie);
-                notities.Add(newNotitie);
-            }
-            else
-            {
-                Console.WriteLine("dit notietieboekje is al gelamineerd, je kan niet Bijschrijven");
-            }
+            Notitie newNotitie = new Notitie(notitie);
+            notities.Add(newNotitie);
         }
-        public void Uitscheuren(Notitie teVerwijderenNotitie)
+        public void Bijschrijven(string naam,string notitie)
         {
-            if (bewerkbaar)
-            {
-                notities.Remove(teVerwijderenNotitie);
-            }
-            else
-            {
-                Console.WriteLine("dit notietieboekje is al gelamineerd, je kan niet Uitscheuren");
-            }
+
+            Notitie newNotitie = new Notitie(naam, notitie);
+            notities.Add(newNotitie);
         }
-        public void BekijkNotitie(int index)
+        public void Uitscheuren(string teVerwijderenNotitie)
         {
-            notities[index - 1].Bekijk();
+
+            for (int i = 0; i < notities.Count; i++)
+            {
+                if (notities[i].naam.Equals(teVerwijderenNotitie))
+                {
+                    notities.Remove(notities[i]);
+                }
+            }
 
         }
-        public void BekijkNotities()
+        public Notitie BekijkNotitie(int index)
         {
-            foreach (var notitie in notities)
+            return notities[index];
+        }
+        public List<Notitie> BekijkNotities()
+        {
+            return notities;
+
+        }
+        public void VulNotitieAan(string naam, string bijschrift)
+        {
+            foreach (var item in notities)
             {
-                notitie.Bekijk();
+                if (item.naam.Equals(naam))
+                {
+                    if (!item.opschrift.Equals(""))
+                    {
+                        item.opschrift += "\n";
+                    }
+                    item.opschrift += bijschrift;
+                }
             }
-        }
-        public void BekijkEigenschappen()
-        {
-            Console.WriteLine($"Dit is {eigenaar} zijn {kleur} notitieboekje. De titel is \"{titel}\"." +
-                $" In dit boekje zitten op dit moment {notities.Count()} notities");
-        }
-        public void Lamineren()
-        {
-            bewerkbaar = false;
         }
 
     }

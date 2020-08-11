@@ -25,7 +25,7 @@ namespace WindowsFormsApp1
 
         private void btnGeefDatum_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(dateTimePicker1.Value.Day.ToString());
+            MessageBox.Show($"{dateTimePicker1.Value.ToString("hh/MM/ss")}");
         }
     }
 }

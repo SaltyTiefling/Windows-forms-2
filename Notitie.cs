@@ -9,16 +9,22 @@ namespace Oef01
     class Notitie
     {
         DateTime dateAndTime = DateTime.Now;
+        public string naam;
         public string opschrift;
+
+        public Notitie(string naam, string opschrift)
+        {
+            this.naam = naam;
+            this.opschrift = opschrift;
+        }
 
         public Notitie(string opschrift)
         {
             this.opschrift = opschrift;
         }
-        public void Bekijk()
+        public override string ToString()
         {
-            Console.WriteLine($"{dateAndTime}: \"{opschrift}\"");
+            return naam;
         }
-
     }
 }

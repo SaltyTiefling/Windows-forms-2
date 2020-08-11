@@ -72,6 +72,7 @@
             this.btnOef04.TabIndex = 3;
             this.btnOef04.Text = "reeks 1 oef 4";
             this.btnOef04.UseVisualStyleBackColor = true;
+            this.btnOef04.Click += new System.EventHandler(this.btnOef04_Click);
             // 
             // fMenu
             // 
