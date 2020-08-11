@@ -32,6 +32,7 @@
             this.btnOef02 = new System.Windows.Forms.Button();
             this.btnOef03 = new System.Windows.Forms.Button();
             this.btnOef04 = new System.Windows.Forms.Button();
+            this.btnOef05 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOef1
@@ -74,11 +75,22 @@
             this.btnOef04.UseVisualStyleBackColor = true;
             this.btnOef04.Click += new System.EventHandler(this.btnOef04_Click);
             // 
+            // btnOef05
+            // 
+            this.btnOef05.Location = new System.Drawing.Point(89, 249);
+            this.btnOef05.Name = "btnOef05";
+            this.btnOef05.Size = new System.Drawing.Size(100, 100);
+            this.btnOef05.TabIndex = 4;
+            this.btnOef05.Text = "reeks 1 oef 5";
+            this.btnOef05.UseVisualStyleBackColor = true;
+            this.btnOef05.Click += new System.EventHandler(this.btnOef05_Click);
+            // 
             // fMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(267, 278);
+            this.ClientSize = new System.Drawing.Size(267, 362);
+            this.Controls.Add(this.btnOef05);
             this.Controls.Add(this.btnOef04);
             this.Controls.Add(this.btnOef03);
             this.Controls.Add(this.btnOef02);
@@ -95,6 +107,7 @@
         private System.Windows.Forms.Button btnOef02;
         private System.Windows.Forms.Button btnOef03;
         private System.Windows.Forms.Button btnOef04;
+        private System.Windows.Forms.Button btnOef05;
     }
 }
 

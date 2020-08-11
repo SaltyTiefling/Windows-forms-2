@@ -41,5 +41,11 @@ namespace WindowsForms2
             fOef04 oef04 = new fOef04();
             oef04.Show();
         }
+
+        private void btnOef05_Click(object sender, EventArgs e)
+        {
+            fOef05 oef05 = new fOef05();
+            oef05.Show();
+        }
     }
 }
