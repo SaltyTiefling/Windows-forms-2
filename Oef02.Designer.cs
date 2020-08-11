@@ -31,22 +31,29 @@
             this.tbxNaam = new System.Windows.Forms.TextBox();
             this.lblNaam = new System.Windows.Forms.Label();
             this.lblAdress = new System.Windows.Forms.Label();
-            this.txbAdress = new System.Windows.Forms.TextBox();
+            this.tbxAdress = new System.Windows.Forms.TextBox();
             this.lblLeeftijd = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numLeeftijd = new System.Windows.Forms.NumericUpDown();
             this.gbGeslacht = new System.Windows.Forms.GroupBox();
-            this.rbMan = new System.Windows.Forms.RadioButton();
-            this.rbVrouw = new System.Windows.Forms.RadioButton();
+            this.tbxAnderGeslacht = new System.Windows.Forms.TextBox();
             this.rbAndere = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.rbVrouw = new System.Windows.Forms.RadioButton();
+            this.rbMan = new System.Windows.Forms.RadioButton();
+            this.gbProvincie = new System.Windows.Forms.GroupBox();
+            this.rbHenegouwen = new System.Windows.Forms.RadioButton();
+            this.rbNamen = new System.Windows.Forms.RadioButton();
+            this.rbLuxemburg = new System.Windows.Forms.RadioButton();
+            this.rbLuik = new System.Windows.Forms.RadioButton();
+            this.rbWaalsBrabant = new System.Windows.Forms.RadioButton();
+            this.rbVlaamsBrabant = new System.Windows.Forms.RadioButton();
+            this.rbWestVlaanderen = new System.Windows.Forms.RadioButton();
+            this.rbOostVlaanderen = new System.Windows.Forms.RadioButton();
+            this.rbLimburg = new System.Windows.Forms.RadioButton();
+            this.rbAntwerpen = new System.Windows.Forms.RadioButton();
+            this.btnIngeven = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.numLeeftijd)).BeginInit();
             this.gbGeslacht.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.gbProvincie.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbxNaam
@@ -54,7 +61,7 @@
             this.tbxNaam.Location = new System.Drawing.Point(57, 15);
             this.tbxNaam.Name = "tbxNaam";
             this.tbxNaam.Size = new System.Drawing.Size(150, 20);
-            this.tbxNaam.TabIndex = 0;
+            this.tbxNaam.TabIndex = 1;
             // 
             // lblNaam
             // 
@@ -74,12 +81,12 @@
             this.lblAdress.TabIndex = 3;
             this.lblAdress.Text = "Adress:";
             // 
-            // txbAdress
+            // tbxAdress
             // 
-            this.txbAdress.Location = new System.Drawing.Point(57, 41);
-            this.txbAdress.Name = "txbAdress";
-            this.txbAdress.Size = new System.Drawing.Size(150, 20);
-            this.txbAdress.TabIndex = 2;
+            this.tbxAdress.Location = new System.Drawing.Point(57, 41);
+            this.tbxAdress.Name = "tbxAdress";
+            this.tbxAdress.Size = new System.Drawing.Size(150, 20);
+            this.tbxAdress.TabIndex = 2;
             // 
             // lblLeeftijd
             // 
@@ -90,23 +97,23 @@
             this.lblLeeftijd.TabIndex = 6;
             this.lblLeeftijd.Text = "Leeftijd:";
             // 
-            // numericUpDown1
+            // numLeeftijd
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(57, 67);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.numLeeftijd.Location = new System.Drawing.Point(57, 67);
+            this.numLeeftijd.Maximum = new decimal(new int[] {
             200,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(150, 20);
-            this.numericUpDown1.TabIndex = 7;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numLeeftijd.Name = "numLeeftijd";
+            this.numLeeftijd.Size = new System.Drawing.Size(150, 20);
+            this.numLeeftijd.TabIndex = 3;
+            this.numLeeftijd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // gbGeslacht
             // 
             this.gbGeslacht.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.gbGeslacht.Controls.Add(this.textBox1);
+            this.gbGeslacht.Controls.Add(this.tbxAnderGeslacht);
             this.gbGeslacht.Controls.Add(this.rbAndere);
             this.gbGeslacht.Controls.Add(this.rbVrouw);
             this.gbGeslacht.Controls.Add(this.rbMan);
@@ -114,9 +121,37 @@
             this.gbGeslacht.Location = new System.Drawing.Point(16, 93);
             this.gbGeslacht.Name = "gbGeslacht";
             this.gbGeslacht.Size = new System.Drawing.Size(200, 100);
-            this.gbGeslacht.TabIndex = 8;
+            this.gbGeslacht.TabIndex = 4;
             this.gbGeslacht.TabStop = false;
             this.gbGeslacht.Text = "Geslacht:";
+            // 
+            // tbxAnderGeslacht
+            // 
+            this.tbxAnderGeslacht.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.tbxAnderGeslacht.Location = new System.Drawing.Point(73, 68);
+            this.tbxAnderGeslacht.Name = "tbxAnderGeslacht";
+            this.tbxAnderGeslacht.Size = new System.Drawing.Size(100, 20);
+            this.tbxAnderGeslacht.TabIndex = 4;
+            // 
+            // rbAndere
+            // 
+            this.rbAndere.AutoSize = true;
+            this.rbAndere.Location = new System.Drawing.Point(7, 68);
+            this.rbAndere.Name = "rbAndere";
+            this.rbAndere.Size = new System.Drawing.Size(62, 17);
+            this.rbAndere.TabIndex = 3;
+            this.rbAndere.Text = "Andere:";
+            this.rbAndere.UseVisualStyleBackColor = true;
+            // 
+            // rbVrouw
+            // 
+            this.rbVrouw.AutoSize = true;
+            this.rbVrouw.Location = new System.Drawing.Point(7, 44);
+            this.rbVrouw.Name = "rbVrouw";
+            this.rbVrouw.Size = new System.Drawing.Size(55, 17);
+            this.rbVrouw.TabIndex = 2;
+            this.rbVrouw.Text = "Vrouw";
+            this.rbVrouw.UseVisualStyleBackColor = true;
             // 
             // rbMan
             // 
@@ -125,112 +160,165 @@
             this.rbMan.Location = new System.Drawing.Point(7, 20);
             this.rbMan.Name = "rbMan";
             this.rbMan.Size = new System.Drawing.Size(46, 17);
-            this.rbMan.TabIndex = 0;
+            this.rbMan.TabIndex = 1;
             this.rbMan.TabStop = true;
             this.rbMan.Text = "Man";
             this.rbMan.UseVisualStyleBackColor = true;
             // 
-            // rbVrouw
+            // gbProvincie
             // 
-            this.rbVrouw.AutoSize = true;
-            this.rbVrouw.Location = new System.Drawing.Point(7, 44);
-            this.rbVrouw.Name = "rbVrouw";
-            this.rbVrouw.Size = new System.Drawing.Size(55, 17);
-            this.rbVrouw.TabIndex = 1;
-            this.rbVrouw.Text = "Vrouw";
-            this.rbVrouw.UseVisualStyleBackColor = true;
+            this.gbProvincie.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.gbProvincie.Controls.Add(this.rbHenegouwen);
+            this.gbProvincie.Controls.Add(this.rbNamen);
+            this.gbProvincie.Controls.Add(this.rbLuxemburg);
+            this.gbProvincie.Controls.Add(this.rbLuik);
+            this.gbProvincie.Controls.Add(this.rbWaalsBrabant);
+            this.gbProvincie.Controls.Add(this.rbVlaamsBrabant);
+            this.gbProvincie.Controls.Add(this.rbWestVlaanderen);
+            this.gbProvincie.Controls.Add(this.rbOostVlaanderen);
+            this.gbProvincie.Controls.Add(this.rbLimburg);
+            this.gbProvincie.Controls.Add(this.rbAntwerpen);
+            this.gbProvincie.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.gbProvincie.Location = new System.Drawing.Point(16, 199);
+            this.gbProvincie.Name = "gbProvincie";
+            this.gbProvincie.Size = new System.Drawing.Size(200, 133);
+            this.gbProvincie.TabIndex = 5;
+            this.gbProvincie.TabStop = false;
+            this.gbProvincie.Text = "Provincie:";
             // 
-            // rbAndere
+            // rbHenegouwen
             // 
-            this.rbAndere.AutoSize = true;
-            this.rbAndere.Location = new System.Drawing.Point(7, 68);
-            this.rbAndere.Name = "rbAndere";
-            this.rbAndere.Size = new System.Drawing.Size(62, 17);
-            this.rbAndere.TabIndex = 2;
-            this.rbAndere.Text = "Andere:";
-            this.rbAndere.UseVisualStyleBackColor = true;
+            this.rbHenegouwen.AutoSize = true;
+            this.rbHenegouwen.Location = new System.Drawing.Point(89, 108);
+            this.rbHenegouwen.Name = "rbHenegouwen";
+            this.rbHenegouwen.Size = new System.Drawing.Size(89, 17);
+            this.rbHenegouwen.TabIndex = 17;
+            this.rbHenegouwen.Text = "Henegouwen";
+            this.rbHenegouwen.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // rbNamen
             // 
-            this.textBox1.Location = new System.Drawing.Point(73, 68);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.rbNamen.AutoSize = true;
+            this.rbNamen.Location = new System.Drawing.Point(7, 108);
+            this.rbNamen.Name = "rbNamen";
+            this.rbNamen.Size = new System.Drawing.Size(59, 17);
+            this.rbNamen.TabIndex = 12;
+            this.rbNamen.Text = "Namen";
+            this.rbNamen.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // rbLuxemburg
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.groupBox1.Location = new System.Drawing.Point(16, 199);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 100);
-            this.groupBox1.TabIndex = 9;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Geslacht:";
+            this.rbLuxemburg.AutoSize = true;
+            this.rbLuxemburg.Location = new System.Drawing.Point(7, 85);
+            this.rbLuxemburg.Name = "rbLuxemburg";
+            this.rbLuxemburg.Size = new System.Drawing.Size(77, 17);
+            this.rbLuxemburg.TabIndex = 11;
+            this.rbLuxemburg.Text = "Luxemburg";
+            this.rbLuxemburg.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // rbLuik
             // 
-            this.textBox2.Location = new System.Drawing.Point(73, 68);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 3;
+            this.rbLuik.AutoSize = true;
+            this.rbLuik.Location = new System.Drawing.Point(7, 62);
+            this.rbLuik.Name = "rbLuik";
+            this.rbLuik.Size = new System.Drawing.Size(45, 17);
+            this.rbLuik.TabIndex = 10;
+            this.rbLuik.Text = "Luik";
+            this.rbLuik.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbWaalsBrabant
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(7, 68);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(62, 17);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.Text = "Andere:";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbWaalsBrabant.AutoSize = true;
+            this.rbWaalsBrabant.Location = new System.Drawing.Point(89, 85);
+            this.rbWaalsBrabant.Name = "rbWaalsBrabant";
+            this.rbWaalsBrabant.Size = new System.Drawing.Size(94, 17);
+            this.rbWaalsBrabant.TabIndex = 16;
+            this.rbWaalsBrabant.Text = "Waals-brabant";
+            this.rbWaalsBrabant.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbVlaamsBrabant
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(7, 44);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(55, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.Text = "Vrouw";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbVlaamsBrabant.AutoSize = true;
+            this.rbVlaamsBrabant.Location = new System.Drawing.Point(89, 62);
+            this.rbVlaamsBrabant.Name = "rbVlaamsBrabant";
+            this.rbVlaamsBrabant.Size = new System.Drawing.Size(99, 17);
+            this.rbVlaamsBrabant.TabIndex = 15;
+            this.rbVlaamsBrabant.Text = "Vlaams-Brabant";
+            this.rbVlaamsBrabant.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rbWestVlaanderen
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Checked = true;
-            this.radioButton3.Location = new System.Drawing.Point(7, 20);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(46, 17);
-            this.radioButton3.TabIndex = 0;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Man";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbWestVlaanderen.AutoSize = true;
+            this.rbWestVlaanderen.Location = new System.Drawing.Point(89, 39);
+            this.rbWestVlaanderen.Name = "rbWestVlaanderen";
+            this.rbWestVlaanderen.Size = new System.Drawing.Size(112, 17);
+            this.rbWestVlaanderen.TabIndex = 14;
+            this.rbWestVlaanderen.Text = "Waals-Vlaanderen";
+            this.rbWestVlaanderen.UseVisualStyleBackColor = true;
+            // 
+            // rbOostVlaanderen
+            // 
+            this.rbOostVlaanderen.AutoSize = true;
+            this.rbOostVlaanderen.Location = new System.Drawing.Point(89, 16);
+            this.rbOostVlaanderen.Name = "rbOostVlaanderen";
+            this.rbOostVlaanderen.Size = new System.Drawing.Size(104, 17);
+            this.rbOostVlaanderen.TabIndex = 13;
+            this.rbOostVlaanderen.Text = "Oost-Vlaanderen";
+            this.rbOostVlaanderen.UseVisualStyleBackColor = true;
+            // 
+            // rbLimburg
+            // 
+            this.rbLimburg.AutoSize = true;
+            this.rbLimburg.Location = new System.Drawing.Point(7, 39);
+            this.rbLimburg.Name = "rbLimburg";
+            this.rbLimburg.Size = new System.Drawing.Size(62, 17);
+            this.rbLimburg.TabIndex = 9;
+            this.rbLimburg.Text = "Limburg";
+            this.rbLimburg.UseVisualStyleBackColor = true;
+            // 
+            // rbAntwerpen
+            // 
+            this.rbAntwerpen.AutoSize = true;
+            this.rbAntwerpen.Checked = true;
+            this.rbAntwerpen.Location = new System.Drawing.Point(7, 16);
+            this.rbAntwerpen.Name = "rbAntwerpen";
+            this.rbAntwerpen.Size = new System.Drawing.Size(76, 17);
+            this.rbAntwerpen.TabIndex = 8;
+            this.rbAntwerpen.TabStop = true;
+            this.rbAntwerpen.Text = "Antwerpen";
+            this.rbAntwerpen.UseVisualStyleBackColor = true;
+            // 
+            // btnIngeven
+            // 
+            this.btnIngeven.Location = new System.Drawing.Point(16, 338);
+            this.btnIngeven.Name = "btnIngeven";
+            this.btnIngeven.Size = new System.Drawing.Size(201, 38);
+            this.btnIngeven.TabIndex = 18;
+            this.btnIngeven.Text = "Ingeven";
+            this.btnIngeven.UseVisualStyleBackColor = true;
+            this.btnIngeven.Click += new System.EventHandler(this.btnIngeven_Click);
             // 
             // fOef02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(251, 450);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(234, 393);
+            this.Controls.Add(this.btnIngeven);
+            this.Controls.Add(this.gbProvincie);
             this.Controls.Add(this.gbGeslacht);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.numLeeftijd);
             this.Controls.Add(this.lblLeeftijd);
             this.Controls.Add(this.lblAdress);
-            this.Controls.Add(this.txbAdress);
+            this.Controls.Add(this.tbxAdress);
             this.Controls.Add(this.lblNaam);
             this.Controls.Add(this.tbxNaam);
             this.Name = "fOef02";
             this.Text = "Oef02";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLeeftijd)).EndInit();
             this.gbGeslacht.ResumeLayout(false);
             this.gbGeslacht.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbProvincie.ResumeLayout(false);
+            this.gbProvincie.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,18 +329,25 @@
         private System.Windows.Forms.TextBox tbxNaam;
         private System.Windows.Forms.Label lblNaam;
         private System.Windows.Forms.Label lblAdress;
-        private System.Windows.Forms.TextBox txbAdress;
+        private System.Windows.Forms.TextBox tbxAdress;
         private System.Windows.Forms.Label lblLeeftijd;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numLeeftijd;
         private System.Windows.Forms.GroupBox gbGeslacht;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbxAnderGeslacht;
         private System.Windows.Forms.RadioButton rbAndere;
         private System.Windows.Forms.RadioButton rbVrouw;
         private System.Windows.Forms.RadioButton rbMan;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.GroupBox gbProvincie;
+        private System.Windows.Forms.RadioButton rbHenegouwen;
+        private System.Windows.Forms.RadioButton rbNamen;
+        private System.Windows.Forms.RadioButton rbLuxemburg;
+        private System.Windows.Forms.RadioButton rbLuik;
+        private System.Windows.Forms.RadioButton rbWaalsBrabant;
+        private System.Windows.Forms.RadioButton rbVlaamsBrabant;
+        private System.Windows.Forms.RadioButton rbWestVlaanderen;
+        private System.Windows.Forms.RadioButton rbOostVlaanderen;
+        private System.Windows.Forms.RadioButton rbLimburg;
+        private System.Windows.Forms.RadioButton rbAntwerpen;
+        private System.Windows.Forms.Button btnIngeven;
     }
 }
