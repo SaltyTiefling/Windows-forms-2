@@ -7,19 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1;
 
-namespace WindowsFormsApp1
+namespace WindowsForms2
 {
-    public partial class Form1 : Form
+    public partial class fMenu : Form
     {
-        public Form1()
+        public fMenu()
         {
             InitializeComponent();
         }
 
         private void btnOef1_Click(object sender, EventArgs e)
         {
-
+            fOef01 oef01 = new fOef01();
+            oef01.Show();
         }
     }
 }

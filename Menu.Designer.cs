@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsApp1
+﻿namespace WindowsForms2
 {
-    partial class Form1
+    partial class fMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -35,20 +35,20 @@
             // 
             this.btnOef1.Location = new System.Drawing.Point(33, 37);
             this.btnOef1.Name = "btnOef1";
-            this.btnOef1.Size = new System.Drawing.Size(75, 23);
+            this.btnOef1.Size = new System.Drawing.Size(100, 100);
             this.btnOef1.TabIndex = 0;
             this.btnOef1.Text = "reeks 1 oef 1";
             this.btnOef1.UseVisualStyleBackColor = true;
             this.btnOef1.Click += new System.EventHandler(this.btnOef1_Click);
             // 
-            // Form1
+            // fMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnOef1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "fMenu";
+            this.Text = "Menu";
             this.ResumeLayout(false);
 
         }
