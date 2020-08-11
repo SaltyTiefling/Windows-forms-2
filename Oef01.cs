@@ -33,16 +33,20 @@ namespace WindowsFormsApp1
 
         private void btnToLeft_Click(object sender, EventArgs e)
         {
-            lbxSecondList.Items.Add(lbxFirstList.SelectedItem);
-            lbxFirstList.Items.Remove(lbxFirstList.SelectedItem);
-            lbxSecondList.SelectedIndex = lbxSecondList.Items.Count - 1;
+            SwitchLists(lbxFirstList, lbxSecondList);
         }
 
         private void btnToRight_Click(object sender, EventArgs e)
         {
-            lbxFirstList.Items.Add(lbxSecondList.SelectedItem);
-            lbxSecondList.Items.Remove(lbxSecondList.SelectedItem);
-            lbxFirstList.SelectedIndex = lbxFirstList.Items.Count - 1;
+            SwitchLists(lbxSecondList, lbxFirstList);
+        }
+        public void SwitchLists(ListBox list1, ListBox list2)
+        {
+            foreach (var item in list1.SelectedItems)
+            {
+                list2.Items.Add(item);
+            }
+            for (int i = list1.SelectedItems.Count - 1; i >= 0; i--) list1.Items.Remove(list1.SelectedItems[i]);
         }
     }
 }

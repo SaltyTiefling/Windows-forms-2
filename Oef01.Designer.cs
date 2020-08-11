@@ -59,6 +59,7 @@
             this.lbxFirstList.FormattingEnabled = true;
             this.lbxFirstList.Location = new System.Drawing.Point(13, 39);
             this.lbxFirstList.Name = "lbxFirstList";
+            this.lbxFirstList.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.lbxFirstList.Size = new System.Drawing.Size(120, 95);
             this.lbxFirstList.TabIndex = 2;
             // 
@@ -87,6 +88,7 @@
             this.lbxSecondList.FormattingEnabled = true;
             this.lbxSecondList.Location = new System.Drawing.Point(220, 39);
             this.lbxSecondList.Name = "lbxSecondList";
+            this.lbxSecondList.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.lbxSecondList.Size = new System.Drawing.Size(120, 95);
             this.lbxSecondList.TabIndex = 5;
             // 
